@@ -1675,6 +1675,8 @@ PROCEDURE GetView
 			
 			=WriteFile(m.hOutFile, GDX_CMDMARGIN + '* Props for the '+m.cFieldAlias+' field.')
 			=WriteFile(m.hOutFile, m.cViewFieldSetPrefix + ['KeyField', ] + m.clKeyField + [)])
+*** DH 2023-05-20: added missing line
+			=WriteFile(m.hOutFile, m.cViewFieldSetPrefix + ['Updatable', ] + m.clUpdatable + [)])
 *** SF: Changes by DH from GenDBC.prg for additional file types
 *** 2022/06/12
 *** DH: added code to handle quotes in UpdateName properly
